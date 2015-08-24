@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E51960691B872595009C2C8D /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51960681B872595009C2C8D /* DVTKit.framework */; };
+		E52C9F8E1B85D70D005F3B54 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52C9F8D1B85D70D005F3B54 /* AppKit.framework */; };
+		E52C9F901B85D70D005F3B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52C9F8F1B85D70D005F3B54 /* Foundation.framework */; };
+		E52C9F951B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = E52C9F941B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme */; };
+		E52C9FAB1B85D90C005F3B54 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */; };
+		E58C5E001B8BC91800048685 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E58C5DFF1B8BC91800048685 /* JRSwizzle.m */; };
+		E58C5E061B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */; };
+		E58C5E071B8BC93800048685 /* VariablesViewFullCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58C5E051B8BC93800048685 /* VariablesViewFullCopy.m */; };
+		E5C8A0291B8A4158000C1CB6 /* DebuggerLLDB in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C8A0281B8A4158000C1CB6 /* DebuggerLLDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E51960681B872595009C2C8D /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
+		E52C9F8A1B85D70D005F3B54 /* VariablesViewFullCopy.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VariablesViewFullCopy.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52C9F8D1B85D70D005F3B54 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		E52C9F8F1B85D70D005F3B54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		E52C9F931B85D70D005F3B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52C9F941B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = VariablesViewFullCopy.xcscheme; path = VariablesViewFullCopy.xcodeproj/xcshareddata/xcschemes/VariablesViewFullCopy.xcscheme; sourceTree = SOURCE_ROOT; };
+		E52C9FA51B85D7F7005F3B54 /* IDEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEKit.h; sourceTree = "<group>"; };
+		E52C9FA91B85D8B2005F3B54 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<absolute>"; };
+		E56E85FB1B8689C900355BDD /* DVTKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTKit.h; sourceTree = "<group>"; };
+		E58C5DFE1B8BC91800048685 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		E58C5DFF1B8BC91800048685 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		E58C5E021B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEVariablesView+VariablesViewFullCopy.h"; sourceTree = "<group>"; };
+		E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEVariablesView+VariablesViewFullCopy.m"; sourceTree = "<group>"; };
+		E58C5E041B8BC93800048685 /* VariablesViewFullCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariablesViewFullCopy.h; sourceTree = "<group>"; };
+		E58C5E051B8BC93800048685 /* VariablesViewFullCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariablesViewFullCopy.m; sourceTree = "<group>"; };
+		E5C8A0281B8A4158000C1CB6 /* DebuggerLLDB */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = DebuggerLLDB; path = ../../../../../../Applications/Xcode.app/Contents/PlugIns/DebuggerLLDB.ideplugin/Contents/MacOS/DebuggerLLDB; sourceTree = "<group>"; };
+		E5C8A02A1B8A4164000C1CB6 /* DebuggerLLDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebuggerLLDB.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E52C9F881B85D70D005F3B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52C9F8E1B85D70D005F3B54 /* AppKit.framework in Frameworks */,
+				E52C9FAB1B85D90C005F3B54 /* IDEKit.framework in Frameworks */,
+				E5C8A0291B8A4158000C1CB6 /* DebuggerLLDB in Frameworks */,
+				E51960691B872595009C2C8D /* DVTKit.framework in Frameworks */,
+				E52C9F901B85D70D005F3B54 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E52C9F811B85D70D005F3B54 = {
+			isa = PBXGroup;
+			children = (
+				E52C9F911B85D70D005F3B54 /* VariablesViewFullCopy */,
+				E52C9F8C1B85D70D005F3B54 /* Frameworks */,
+				E52C9F8B1B85D70D005F3B54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E52C9F8B1B85D70D005F3B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E52C9F8A1B85D70D005F3B54 /* VariablesViewFullCopy.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E52C9F8C1B85D70D005F3B54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5C8A0281B8A4158000C1CB6 /* DebuggerLLDB */,
+				E52C9F8D1B85D70D005F3B54 /* AppKit.framework */,
+				E52C9F8F1B85D70D005F3B54 /* Foundation.framework */,
+				E51960681B872595009C2C8D /* DVTKit.framework */,
+				E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E52C9F911B85D70D005F3B54 /* VariablesViewFullCopy */ = {
+			isa = PBXGroup;
+			children = (
+				E58C5E011B8BC93800048685 /* Classes */,
+				E58C5DFD1B8BC91800048685 /* JRSwizzle */,
+				E52C9FA41B85D7D5005F3B54 /* XcodeHeaders */,
+				E52C9F921B85D70D005F3B54 /* Supporting Files */,
+			);
+			path = VariablesViewFullCopy;
+			sourceTree = "<group>";
+		};
+		E52C9F921B85D70D005F3B54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E52C9F931B85D70D005F3B54 /* Info.plist */,
+				E52C9FA91B85D8B2005F3B54 /* Prefix.pch */,
+				E52C9F941B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E52C9FA41B85D7D5005F3B54 /* XcodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				E52C9FA51B85D7F7005F3B54 /* IDEKit.h */,
+				E56E85FB1B8689C900355BDD /* DVTKit.h */,
+				E5C8A02A1B8A4164000C1CB6 /* DebuggerLLDB.h */,
+			);
+			path = XcodeHeaders;
+			sourceTree = "<group>";
+		};
+		E58C5DFD1B8BC91800048685 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				E58C5DFE1B8BC91800048685 /* JRSwizzle.h */,
+				E58C5DFF1B8BC91800048685 /* JRSwizzle.m */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		E58C5E011B8BC93800048685 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E58C5E021B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.h */,
+				E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */,
+				E58C5E041B8BC93800048685 /* VariablesViewFullCopy.h */,
+				E58C5E051B8BC93800048685 /* VariablesViewFullCopy.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E52C9F891B85D70D005F3B54 /* VariablesViewFullCopy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E52C9F9E1B85D70D005F3B54 /* Build configuration list for PBXNativeTarget "VariablesViewFullCopy" */;
+			buildPhases = (
+				E52C9F861B85D70D005F3B54 /* Sources */,
+				E52C9F871B85D70D005F3B54 /* Resources */,
+				E52C9F881B85D70D005F3B54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VariablesViewFullCopy;
+			productName = VariablesViewFullCopy;
+			productReference = E52C9F8A1B85D70D005F3B54 /* VariablesViewFullCopy.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E52C9F821B85D70D005F3B54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "orange in a day";
+				TargetAttributes = {
+					E52C9F891B85D70D005F3B54 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = E52C9F851B85D70D005F3B54 /* Build configuration list for PBXProject "VariablesViewFullCopy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E52C9F811B85D70D005F3B54;
+			productRefGroup = E52C9F8B1B85D70D005F3B54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E52C9F891B85D70D005F3B54 /* VariablesViewFullCopy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E52C9F871B85D70D005F3B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E52C9F951B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E52C9F861B85D70D005F3B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E58C5E071B8BC93800048685 /* VariablesViewFullCopy.m in Sources */,
+				E58C5E061B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m in Sources */,
+				E58C5E001B8BC91800048685 /* JRSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E52C9F9C1B85D70D005F3B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		E52C9F9D1B85D70D005F3B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		E52C9F9F1B85D70D005F3B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks",
+					"$(PROJECT_DIR)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/SharedFrameworks",
+				);
+				GCC_PREFIX_HEADER = VariablesViewFullCopy/Prefix.pch;
+				INFOPLIST_FILE = VariablesViewFullCopy/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/PlugIns/DebuggerLLDB.ideplugin/Contents/MacOS",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		E52C9FA01B85D70D005F3B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Frameworks",
+					"$(PROJECT_DIR)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/SharedFrameworks",
+				);
+				GCC_PREFIX_HEADER = VariablesViewFullCopy/Prefix.pch;
+				INFOPLIST_FILE = VariablesViewFullCopy/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/PlugIns/DebuggerLLDB.ideplugin/Contents/MacOS",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E52C9F851B85D70D005F3B54 /* Build configuration list for PBXProject "VariablesViewFullCopy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52C9F9C1B85D70D005F3B54 /* Debug */,
+				E52C9F9D1B85D70D005F3B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E52C9F9E1B85D70D005F3B54 /* Build configuration list for PBXNativeTarget "VariablesViewFullCopy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E52C9F9F1B85D70D005F3B54 /* Debug */,
+				E52C9FA01B85D70D005F3B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E52C9F821B85D70D005F3B54 /* Project object */;
+}
