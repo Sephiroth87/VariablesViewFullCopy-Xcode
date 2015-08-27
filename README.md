@@ -7,6 +7,7 @@ VariablesViewFullCopy is an Xcode that will let you copy the full tree descripti
 
 ##Usage
 Right click any object from the Variables View and select "Full copy".
+Each child will only be copied once to avoid reference cycles, if they appear again their children will be replaced by a "[...]".
 
 ##Installation
 - Clone and build the project
