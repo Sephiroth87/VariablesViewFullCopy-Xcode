@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E51960681B872595009C2C8D /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../../../../../../Applications/Xcode.app/Contents/SharedFrameworks/DVTKit.framework; sourceTree = "<group>"; };
+		E51960681B872595009C2C8D /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = ../SharedFrameworks/DVTKit.framework; sourceTree = DEVELOPER_DIR; };
 		E52C9F8A1B85D70D005F3B54 /* VariablesViewFullCopy.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VariablesViewFullCopy.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52C9F8D1B85D70D005F3B54 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E52C9F8F1B85D70D005F3B54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -27,7 +27,7 @@
 		E52C9F941B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = VariablesViewFullCopy.xcscheme; path = VariablesViewFullCopy.xcodeproj/xcshareddata/xcschemes/VariablesViewFullCopy.xcscheme; sourceTree = SOURCE_ROOT; };
 		E52C9FA51B85D7F7005F3B54 /* IDEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEKit.h; sourceTree = "<group>"; };
 		E52C9FA91B85D8B2005F3B54 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework; sourceTree = "<absolute>"; };
+		E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ../Frameworks/IDEKit.framework; sourceTree = DEVELOPER_DIR; };
 		E56E85FB1B8689C900355BDD /* DVTKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTKit.h; sourceTree = "<group>"; };
 		E58C5DFE1B8BC91800048685 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		E58C5DFF1B8BC91800048685 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEVariablesView+VariablesViewFullCopy.m"; sourceTree = "<group>"; };
 		E58C5E041B8BC93800048685 /* VariablesViewFullCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariablesViewFullCopy.h; sourceTree = "<group>"; };
 		E58C5E051B8BC93800048685 /* VariablesViewFullCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariablesViewFullCopy.m; sourceTree = "<group>"; };
-		E5C8A0281B8A4158000C1CB6 /* DebuggerLLDB */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = DebuggerLLDB; path = ../../../../../../Applications/Xcode.app/Contents/PlugIns/DebuggerLLDB.ideplugin/Contents/MacOS/DebuggerLLDB; sourceTree = "<group>"; };
+		E5C8A0281B8A4158000C1CB6 /* DebuggerLLDB */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = DebuggerLLDB; path = ../PlugIns/DebuggerLLDB.ideplugin/Contents/MacOS/DebuggerLLDB; sourceTree = DEVELOPER_DIR; };
 		E5C8A02A1B8A4164000C1CB6 /* DebuggerLLDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebuggerLLDB.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
