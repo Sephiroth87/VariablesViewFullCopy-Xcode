@@ -48,29 +48,24 @@
     }
 }
 
-- (NSString *)recursiveDescription:(IDEVariablesViewNode *)root depthPrefix:(NSString *)depthPrefix visitedValues:(NSMutableSet *)visitedValues
+- (NSString *)recursiveDescription:(DBGLLDBDataValue *)root depthPrefix:(NSString *)depthPrefix visitedValues:(NSMutableSet *)visitedValues
 {
-    DBGLLDBDataValue *dataValue = [root dataValue];
-    [dataValue _fetchSummaryFromLLDBOnSessionThreadIfNecessary];
-    NSMutableString *description = [NSMutableString stringWithFormat:@"%@%@\n", depthPrefix, [root pasteboardPropertyListForType:NSPasteboardTypeString]];
-    if (![dataValue representsNilObjectiveCObject] && ![dataValue representsNullObjectPointer]) {
-        NSString *value = [[root dataValue] value];
-        if (!dataValue.childValuesCountValid) {
-            for (DBGLLDBDataValue *child in [[root dataValue] childValues]) {
-                if (child.isValid) {
-                    [child invalidate];
+    [root _fetchSummaryFromLLDBOnSessionThreadIfNecessary];
+    NSMutableString *description = [NSMutableString stringWithFormat:@"%@%@\t%@\t%@\t%@\n", depthPrefix, root.name, root.type, root.logicalValue, root.value];
+    if (root && ![root representsNilObjectiveCObject] && ![root representsNullObjectPointer]) {
+        if (!root.childValuesCountValid) {
+            [root _fetchChildValuesFromLLDBOnSessionThreadIfNecessary];
+            while (!root.childValuesCountValid) {
+            }
+            BOOL visited = [visitedValues containsObject:root.value];
+            if ([root.value length] == 0 || [root.logicalValue isEqualToString:@"0x0"] || !visited) {
+                [visitedValues addObject:root.value];
+                for (DBGLLDBDataValue *child in root.childValues) {
+                    [description appendString:[self recursiveDescription:child depthPrefix:[depthPrefix stringByAppendingString:@"\t"] visitedValues:visitedValues]];
                 }
+            } else if (visited && [root.childValues count]) {
+                [description appendFormat:@"%@\t[...]\n", depthPrefix];
             }
-            [[root dataValue] _setChildValuesToArrayOfActualChildren];
-        }
-        BOOL visited = [visitedValues containsObject:value];
-        if ([value length] == 0 || [dataValue.logicalValue isEqualToString:@"0x0"] || !visited) {
-            [visitedValues addObject:[[root dataValue] value]];
-            for (IDEVariablesViewNode *child in root.children) {
-                [description appendString:[self recursiveDescription:child depthPrefix:[depthPrefix stringByAppendingString:@"\t"] visitedValues:visitedValues]];
-            }
-        } else if (visited && [root.children count]) {
-            [description appendFormat:@"%@\t[...]\n", depthPrefix];
         }
     }
     return [NSString stringWithString:description];
@@ -88,7 +83,7 @@
             [self _showLoadingIndicatorIfNecessary];
             [session addSessionThreadAction:^{
                 NSMutableSet *visitedValues = [NSMutableSet set];
-                NSString *description = [self recursiveDescription:root depthPrefix:@"" visitedValues:visitedValues];
+                NSString *description = [self recursiveDescription:root.dataValue depthPrefix:@"" visitedValues:visitedValues];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self _hideLoadingIndicatorIfNecessary];
                     [[NSPasteboard generalPasteboard] writeObjects:@[description]];

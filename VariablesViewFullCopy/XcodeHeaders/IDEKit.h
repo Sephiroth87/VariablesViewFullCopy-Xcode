@@ -18,9 +18,8 @@
 
 @end
 
-@interface IDEVariablesViewNode : NSObject <NSPasteboardWriting>
+@interface IDEVariablesViewNode : NSObject
 
-@property(readonly) NSArray *children;
 @property(readonly) id dataValue;
 
 @end

@@ -12,19 +12,23 @@
 
 @end
 
-@interface DBGDataValue : NSObject <DVTInvalidation>
+@interface DBGDataValue : NSObject
 
+@property(readonly, copy) NSString *type;
+@property(copy) NSString *value;
 @property(readonly, copy) NSString *logicalValue;
 
 @end
 
 @interface DBGLLDBDataValue : DBGDataValue
 
+@property(copy, nonatomic) NSString *name;
+
 @property(retain, nonatomic) NSArray *childValues;
 @property BOOL childValuesCountValid;
 
-- (void)_setChildValuesToArrayOfActualChildren;
 - (void)_fetchSummaryFromLLDBOnSessionThreadIfNecessary;
+- (void)_fetchChildValuesFromLLDBOnSessionThreadIfNecessary;
 - (id)_lldbSession;
 - (BOOL)representsNullObjectPointer;
 - (BOOL)representsNilObjectiveCObject;
