@@ -8,12 +8,22 @@ VariablesViewFullCopy is an Xcode that will let you copy the full tree descripti
 ##Usage
 Right click any object from the Variables View and select "Full copy".
 Each child will only be copied once to avoid reference cycles, if they appear again their children will be replaced by a "[...]".
+**Caution:** some objects might take a lot to copy (some Xcode internal objects were taking hours and ultimately failed because the Mac ran out of memory), for now I added a cancel button to interrupt the process, but if anyone has better idea how to handle huge trees let me know :)
 
 ##Installation
 - Clone and build the project
 - Use [Alcatraz](https://github.com/supermarin/Alcatraz)
 
 Either way, restart Xcode to make it load
+
+##Release notes
+###1.1
+- Xcode7 support
+- Add cancel button to stop the copy
+- Add notifications for new releases
+
+###1.0
+- Initial Release
 
 ##License
 Copyright (c) 2015. [Fabio Ritrovato](https://twitter.com/Sephiroth87)
