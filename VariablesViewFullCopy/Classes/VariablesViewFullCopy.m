@@ -7,6 +7,9 @@
 //
 
 #import "VariablesViewFullCopy.h"
+#import "DVTFoundation.h"
+
+NSString * const VariablesViewFullCopyNewVersionNotification = @"VariablesViewFullCopyNewVersionNotification";
 
 @interface VariablesViewFullCopy()
 
@@ -35,6 +38,20 @@
 {
     if (self = [super init]) {
         self.bundle = plugin;
+        NSString *currentVersion = [plugin objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
+        NSString *lastVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"VariablesViewFullCopyLastVersion"];
+        if (lastVersion == nil || [lastVersion compare:currentVersion options:NSNumericSearch] == NSOrderedDescending) {
+            NSUserNotification *notification = [NSUserNotification new];
+            notification.title = [NSString stringWithFormat:@"VariablesViewFullCopy updated to %@", currentVersion];
+            notification.informativeText = @"View release notes";
+            notification.userInfo = @{VariablesViewFullCopyNewVersionNotification: @(YES)};
+            notification.actionButtonTitle = @"View";
+            [notification setValue:@YES forKey:@"_showsButtons"];
+            
+            [[DVTUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+            
+            [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:@"VariablesViewFullCopyLastVersion"];
+        }
     }
     return self;
 }

@@ -12,6 +12,8 @@
 		E52C9F901B85D70D005F3B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52C9F8F1B85D70D005F3B54 /* Foundation.framework */; };
 		E52C9F951B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = E52C9F941B85D70D005F3B54 /* VariablesViewFullCopy.xcscheme */; };
 		E52C9FAB1B85D90C005F3B54 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */; };
+		E54ADEF01BAC696100044F61 /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54ADEEF1BAC696100044F61 /* DVTFoundation.framework */; settings = {ASSET_TAGS = (); }; };
+		E54ADEF41BAC69CC00044F61 /* DVTUserNotificationCenter+VariablesViewFullCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = E54ADEF31BAC69CC00044F61 /* DVTUserNotificationCenter+VariablesViewFullCopy.m */; settings = {ASSET_TAGS = (); }; };
 		E58C5E001B8BC91800048685 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = E58C5DFF1B8BC91800048685 /* JRSwizzle.m */; };
 		E58C5E061B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */; };
 		E58C5E071B8BC93800048685 /* VariablesViewFullCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = E58C5E051B8BC93800048685 /* VariablesViewFullCopy.m */; };
@@ -28,6 +30,10 @@
 		E52C9FA51B85D7F7005F3B54 /* IDEKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDEKit.h; sourceTree = "<group>"; };
 		E52C9FA91B85D8B2005F3B54 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = ../Frameworks/IDEKit.framework; sourceTree = DEVELOPER_DIR; };
+		E54ADEEF1BAC696100044F61 /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = ../SharedFrameworks/DVTFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		E54ADEF11BAC698600044F61 /* DVTFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTFoundation.h; sourceTree = "<group>"; };
+		E54ADEF21BAC69CC00044F61 /* DVTUserNotificationCenter+VariablesViewFullCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DVTUserNotificationCenter+VariablesViewFullCopy.h"; sourceTree = "<group>"; };
+		E54ADEF31BAC69CC00044F61 /* DVTUserNotificationCenter+VariablesViewFullCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DVTUserNotificationCenter+VariablesViewFullCopy.m"; sourceTree = "<group>"; };
 		E56E85FB1B8689C900355BDD /* DVTKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVTKit.h; sourceTree = "<group>"; };
 		E58C5DFE1B8BC91800048685 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		E58C5DFF1B8BC91800048685 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
@@ -46,6 +52,7 @@
 			files = (
 				E52C9F8E1B85D70D005F3B54 /* AppKit.framework in Frameworks */,
 				E52C9FAB1B85D90C005F3B54 /* IDEKit.framework in Frameworks */,
+				E54ADEF01BAC696100044F61 /* DVTFoundation.framework in Frameworks */,
 				E5C8A0291B8A4158000C1CB6 /* DebuggerLLDB in Frameworks */,
 				E51960691B872595009C2C8D /* DVTKit.framework in Frameworks */,
 				E52C9F901B85D70D005F3B54 /* Foundation.framework in Frameworks */,
@@ -78,6 +85,7 @@
 				E5C8A0281B8A4158000C1CB6 /* DebuggerLLDB */,
 				E52C9F8D1B85D70D005F3B54 /* AppKit.framework */,
 				E52C9F8F1B85D70D005F3B54 /* Foundation.framework */,
+				E54ADEEF1BAC696100044F61 /* DVTFoundation.framework */,
 				E51960681B872595009C2C8D /* DVTKit.framework */,
 				E52C9FAA1B85D90C005F3B54 /* IDEKit.framework */,
 			);
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E52C9FA51B85D7F7005F3B54 /* IDEKit.h */,
+				E54ADEF11BAC698600044F61 /* DVTFoundation.h */,
 				E56E85FB1B8689C900355BDD /* DVTKit.h */,
 				E5C8A02A1B8A4164000C1CB6 /* DebuggerLLDB.h */,
 			);
@@ -131,6 +140,8 @@
 				E58C5E051B8BC93800048685 /* VariablesViewFullCopy.m */,
 				E58C5E021B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.h */,
 				E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */,
+				E54ADEF21BAC69CC00044F61 /* DVTUserNotificationCenter+VariablesViewFullCopy.h */,
+				E54ADEF31BAC69CC00044F61 /* DVTUserNotificationCenter+VariablesViewFullCopy.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 			files = (
 				E58C5E071B8BC93800048685 /* VariablesViewFullCopy.m in Sources */,
 				E58C5E061B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m in Sources */,
+				E54ADEF41BAC69CC00044F61 /* DVTUserNotificationCenter+VariablesViewFullCopy.m in Sources */,
 				E58C5E001B8BC91800048685 /* JRSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

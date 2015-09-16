@@ -8,6 +8,8 @@
 
 #import <AppKit/AppKit.h>
 
+extern NSString * const VariablesViewFullCopyNewVersionNotification;
+
 @class VariablesViewFullCopy;
 
 static VariablesViewFullCopy *sharedPlugin;
