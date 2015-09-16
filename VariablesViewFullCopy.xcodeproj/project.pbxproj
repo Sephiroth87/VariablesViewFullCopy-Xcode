@@ -127,10 +127,10 @@
 		E58C5E011B8BC93800048685 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E58C5E021B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.h */,
-				E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */,
 				E58C5E041B8BC93800048685 /* VariablesViewFullCopy.h */,
 				E58C5E051B8BC93800048685 /* VariablesViewFullCopy.m */,
+				E58C5E021B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.h */,
+				E58C5E031B8BC93800048685 /* IDEVariablesView+VariablesViewFullCopy.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 		E52C9F821B85D70D005F3B54 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "orange in a day";
 				TargetAttributes = {
 					E52C9F891B85D70D005F3B54 = {
