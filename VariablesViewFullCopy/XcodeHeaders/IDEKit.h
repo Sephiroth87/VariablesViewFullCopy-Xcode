@@ -10,6 +10,7 @@
 
 @interface IDEVariablesView : NSViewController
 
+@property __weak NSProgressIndicator *loadingIndicator;
 @property(retain) DVTOutlineView *outlineView;
 
 - (void)menuNeedsUpdate:(id)arg1;
